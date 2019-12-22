@@ -1,0 +1,24 @@
+@import 'mixins/btn';
+@import 'mixins/pts';
+
+col1 = white; // box shadow
+col2 = #f9f9f9; // bg
+col3 = #e9e9e9; // bg gradient
+col4 = #dcdcdc; // border
+col5 = #666666; // text color
+
+body {
+  background-color: white;
+}
+
+#lt {
+  visibility: hidden;
+}
+
+#dt {
+  visibility: visible;
+}
+
+pts(black, 96px);
+btn('upg', col1, col2, col3, col4, col5);
+btn('clickbtn', col1, col2, col3, col4, col5);

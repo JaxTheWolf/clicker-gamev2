@@ -1,0 +1,1 @@
+var pt=0;$(function(){$(".click").click(function(){pt++;alert(pt);$(".pts").html(pt)});$(".dt").click(function(){$(".theme").css("href","/public/css/light.css")});$(".lt").click(function(){$(".theme").css("href","/public/css/dark.css")})});

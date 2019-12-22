@@ -1,0 +1,40 @@
+{
+  "name": "clicker-gamev2",
+  "version": "2.0.0",
+  "description": "A rewrite of my awful clicker game",
+  "main": "server/app.js",
+  "scripts": {
+    "minify": "cd scripts && sh minify.sh all",
+    "minify-js": "cd scripts && sh minify.sh JS",
+    "minify-html": "cd scripts && sh minify.sh HTML",
+    "minify-css": "cd scripts && sh minify.sh CSS",
+    "test": "cd scripts && sh minify.sh all && cd ../ && node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaxTheWolf/clicker-gamev2.git"
+  },
+  "keywords": [
+    "clicker",
+    "game",
+    "click",
+    "reboot",
+    "rewrite"
+  ],
+  "author": "Roman Lubij",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JaxTheWolf/clicker-gamev2/issues"
+  },
+  "homepage": "https://github.com/JaxTheWolf/clicker-gamev2#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@node-minify/core": "^5.2.1",
+    "@node-minify/csso": "^5.2.0",
+    "@node-minify/google-closure-compiler": "^5.2.1",
+    "@node-minify/html-minifier": "^5.2.0",
+    "node-sass": "^4.13.0"
+  }
+}

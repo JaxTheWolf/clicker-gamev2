@@ -1,0 +1,54 @@
+@import 'mixins/btn';
+@import 'mixins/pts';
+
+col1 = #404040; // box shadow
+col2 = #464646; // bg
+col3 = black; // bg gradient
+col4 = black; // border
+col5 = white; // text color
+
+body {
+  background-color: black;
+}
+
+.lt {
+  z-index: 1;
+  visibility: visible;
+  btn(col1, col2, col3, col4, col5);
+}
+
+.lt:hover {
+  btnHover(col2, col3);
+}
+
+.lt:active {
+  btnActive(col2, col3);
+}
+
+.dt {
+  z-index: 0;
+  visibility: hidden;
+}
+
+.upg {
+  position: fixed;
+  left: 5px;
+  bottom: 5px;
+  btn(col1, col2, col3, col4, col5);
+}
+
+.upg:hover {
+  btnHover(col2, col3);
+}
+
+.upg:active {
+  btnActive(col2, col3);
+}
+
+.lt, .dt {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+
+pts(white, 96px);
