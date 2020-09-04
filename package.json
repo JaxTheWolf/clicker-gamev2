@@ -35,6 +35,6 @@
     "@node-minify/csso": "^5.2.0",
     "@node-minify/google-closure-compiler": "^5.2.1",
     "@node-minify/html-minifier": "^5.2.0",
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.1"
   }
 }
